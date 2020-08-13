@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #74408c;
+}
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin: 0;
+  color: #74408c;
+}
+
+.sign-in-form {
+  background-color: white;
+  width: 463px;
+  margin: auto;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 44px;
+  border-radius: 5px;
+}
+
+.form-field,
+.btn {
+  width: 391px;
+  height: 55px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.form-field {
+  margin-top: 14px;
+  background: #e5e9ed;
+  border: 1px solid #c9c9c9;
+  padding-left: 16px;
+  outline: none;
+}
+
+.form-field:focus {
+  background-color: white;
+  border: 1px solid greenyellow;
+}
+
+.btn {
+  background: #74408c;
+  border: 1px solid #74408c;
+  margin-top: 55px;
+  color: white;
+}
+
+.btn:hover {
+  background-color: #b649e8;
+  border: 1px solid #b649e8;
+}

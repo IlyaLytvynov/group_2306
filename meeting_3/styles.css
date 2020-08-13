@@ -1,0 +1,31 @@
+body {
+  background-image: url(./ragnar-vorel-351414-unsplash@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.overlay {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: rgba(0, 0, 0, 0.62);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.custom-checkbox > label {
+  color: white;
+}
+
+.custom-checkbox > input {
+  display: none;
+}
+
+.custom-checkbox > input:checked + label {
+  color: red;
+}

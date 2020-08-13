@@ -1,0 +1,11 @@
+.page-header {
+  background-color: #1b1b1b;
+  height: 60px;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  position: fixed;
+  color: #fff;
+}
+
+/*# sourceMappingURL=header.css.map */

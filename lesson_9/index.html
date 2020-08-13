@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 9</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="nav expand" id="nav">
+        <button class="nav__toggle" id="btn"></button>
+        <ul class="nav__menu menu">
+          <li class="menu__item"><a href="" class="menu__link">Shop</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Bookings</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Log in</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Sign up</a></li>
+          <li class="menu__item"><a href="" class="menu__link">Home</a></li>
+          <li class="menu__item"><a href="" class="menu__link">About</a></li>
+          <li class="menu__item">
+            <a href="" class="menu__link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-contant">
+      <section class="products">
+        <div class="product">
+          <div class="product__head">
+            <div class="product__label">топ продаж</div>
+          </div>
+          <div class="product__content">
+            <img src="" alt="" class="product__img" />
+          </div>
+          <div class="product__footer">
+            <button class="product__btn btn btn_large btn_submit">
+              submit
+            </button>
+            <button class="btn btn_small btn_cancel">cancel</button>
+          </div>
+        </div>
+        <div class="product product_best-seller">
+          <div class="product__head">
+            <div class="product__label">топ продаж</div>
+          </div>
+          <div class="product__content">
+            <img src="" alt="" class="product__img" />
+          </div>
+          <div class="product__footer"></div>
+        </div>
+      </section>
+      <button type="button" class="btn btn-primary--">Primary</button>
+      <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+      </div>
+      <div class="alert alert-primary" role="alert">
+        A simple primary alert—check it out!
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer"></footer>
+  </body>
+  <script>
+    btn.onclick = () => {
+      nav.classList.toggle('expand');
+    };
+  </script>
+</html>

@@ -1,0 +1,46 @@
+.product {
+  max-width: 400px;
+  height: 400px;
+  border: 1px solid grey;
+  &__label {
+    background-color: orange;
+    color: #fff;
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px;
+    display: none;
+  }
+
+  &_best-seller {
+    .product__label {
+      display: block;
+    }
+  }
+  &__btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+// .btn {
+//   padding: 10px;
+//   border-radius: 5px;
+//   border: none;
+//   background-color: transparent;
+//   font-size: 1rem;
+//   &_large {
+//     padding: 20px;
+//     font-size: 25px;
+//   }
+//   &_submit {
+//     background-color: green;
+//   }
+//   &_cancel {
+//     background-color: red;
+//   }
+//   &_small {
+//     padding: 5px;
+//     font-size: 0.5rem;
+//   }
+// }
