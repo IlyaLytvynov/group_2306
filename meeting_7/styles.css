@@ -1,0 +1,10 @@
+.btn {
+  --size: 100px;
+  display: block;
+  background-color: aqua;
+  border: 1px solid black;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  transition: all 1s;
+}
