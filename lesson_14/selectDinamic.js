@@ -77,4 +77,18 @@ function createSelect(mountPoint, optionTexts) {
   selectedOption.addEventListener('click', toggle);
 }
 
+function createButton(parentElemnt, text, onClick) {
+  const createElement = document.createElement('button');
+  createElement.textContent = text;
+  createElement.addEventListener('click', onClick);
+  parentElemnt.append(createElement);
+}
+
+createButton(document.querySelector('body'), 'Click me', function () {
+  console.log('hello world');
+});
+createButton(document.querySelector('body'), 'Hello', function () {
+  console.log('Test');
+});
+
 export { createSelect };

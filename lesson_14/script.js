@@ -13,6 +13,11 @@ createSelect(document.querySelector('.container'), [
   'London',
 ]);
 
+function createCircles(count) {}
+
+createCircles(100);
+createCircles(20);
+
 // const newElement = document.createElement('h1');
 
 // newElement.textContent = "HELLO I'm new one!!";

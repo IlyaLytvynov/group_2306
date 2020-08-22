@@ -1,0 +1,14 @@
+.preview {
+  width: 400px;
+  border: 1px solid red;
+}
+
+.preview__content {
+  height: 0;
+  visibility: hidden;
+}
+
+.preview__content_expand {
+  height: auto;
+  visibility: visible;
+}
