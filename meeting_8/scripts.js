@@ -28,3 +28,11 @@ for (let article of articles) {
   const feedItem = new ParagraphPreview(body, article.title, article.text);
   feedItem.render();
 }
+
+class Accordion {
+  /**
+   *
+   * @param {Array<{title: string, text: string}>} arrayOfItems
+   */
+  constructor(domNode, arrayOfItems) {}
+}
