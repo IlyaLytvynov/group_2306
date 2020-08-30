@@ -12,3 +12,15 @@
   height: auto;
   visibility: visible;
 }
+
+.text-wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.text-wrapper > h2 {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}

@@ -9,7 +9,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "browser-sync start --server --files ./"
+    "start": "http-server -c-1 ./",
+    "start:server": "cd ./ads-box-server-master && npm start"
   },
   "repository": {
     "type": "git",
