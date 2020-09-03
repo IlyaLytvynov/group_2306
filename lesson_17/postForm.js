@@ -1,14 +1,17 @@
+import { ApiRequest } from '../common/utils/apiRequest.js';
+
 export class PostForm {
-  constructor(root) {
+  constructor(root, onSubmit) {
     this.root = root;
+    this.onSubmit = onSubmit;
   }
 
   render() {
     this.formEl = document.createElement('form');
     this.inputTitle = document.createElement('input');
-    this.inputContent = document.createElement('input');
+    this.inputContent = document.createElement('textarea');
     this.btn = document.createElement('button');
-
+    this.formEl.classList.add('add-post-form');
     this.inputTitle.placeholder = 'Title';
     this.inputTitle.name = 'title';
     this.inputContent.placeholder = 'Content';
@@ -24,19 +27,24 @@ export class PostForm {
       const title = this.inputTitle.value;
       const content = this.inputContent.value;
       const requestBody = { title, content };
-
-      const xhr = new XMLHttpRequest();
-      xhr.open('POST', 'http://localhost:3000/posts');
-      xhr.setRequestHeader('Content-Type', 'application/json');
-      const requestJSON = JSON.stringify(requestBody); // {'title': 'asdas', 'content': 'content'}
-      xhr.send(requestJSON);
-      xhr.onload = () => {
-        console.log('5');
-        const post = JSON.parse(xhr.response);
-        console.log(post);
-      };
-      console.log('6');
+      const req = new ApiRequest();
+      req.post(
+        requestBody,
+        'http://localhost:3000/posts',
+        (responseData) => {
+          this.onSubmit(JSON.parse(responseData));
+          this.reset();
+        },
+        (errorMessage) => {
+          console.log(errorMessage);
+        }
+      );
     });
     this.root.append(this.formEl);
+  }
+
+  reset() {
+    this.inputTitle.value = '';
+    this.inputContent.value = '';
   }
 }
